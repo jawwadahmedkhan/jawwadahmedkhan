@@ -1,9 +1,5 @@
 
-import os
-
-html_content = open('/tmp/jawwad-github-profile.html', 'w') if False else None
-
-content = '''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
@@ -225,9 +221,4 @@ content = '''<!DOCTYPE html>
 })();
 </script>
 </body>
-</html>'''
-
-os.makedirs('output', exist_ok=True)
-with open('output/jawwad-github-profile.html', 'w') as f:
-    f.write(content)
-print("Written:", os.path.getsize('output/jawwad-github-profile.html'), "bytes")
+</html>
